@@ -1,0 +1,6 @@
+11:40:04.690 INFO  - =====================================Tc_001_SuperAdmin_Login==================================================
+11:40:10.693 INFO  - Open Browser :- Chrome
+11:40:24.742 INFO  - OpenURL :-https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+11:40:38.579 INFO  - Enter_SuperAdminUsername :-Admin
+11:40:43.750 INFO  - Enter_SuperAdminPassword :-admin123
+11:40:50.506 INFO  - Click_Login :-
