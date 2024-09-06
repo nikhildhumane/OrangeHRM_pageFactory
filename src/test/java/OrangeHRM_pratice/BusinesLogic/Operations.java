@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.concurrent.TimeoutException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -15,7 +16,7 @@ import OrangeHRM_pratice.PageObjects.BaseClass;
 
 public class Operations extends BaseClass {
 	
-	
+//======================================================================================================//			
 	public void URL(String name) throws Exception
 	{
 		if(name ==null || name.isEmpty())
@@ -34,6 +35,7 @@ public class Operations extends BaseClass {
 		
 	}
 	
+//======================================================================================================//			
 	
 	
 
@@ -61,7 +63,7 @@ public class Operations extends BaseClass {
 	}
 	
 	
-	
+//======================================================================================================//			
 	
 	
 	public void VerifyText(String xpath,String Exptitle) throws Exception
@@ -94,10 +96,11 @@ public class Operations extends BaseClass {
 	}
 	
 	
+//======================================================================================================//			
 	
 	
 	
-public static void doubleClick(String xpath) {
+     public static void doubleClick(String xpath) {
 	    
 	    if (xpath == null || xpath.isEmpty()) {
 	        throw new IllegalArgumentException("XPath is null or empty");
@@ -120,9 +123,52 @@ public static void doubleClick(String xpath) {
 	    }
 	}
 
+     
+  //======================================================================================================//		  
 
 	
+   
+     public static void Js_scroll_Down() throws Exception
+     {
+    	 JavascriptExecutor js = (JavascriptExecutor) driver;
+    	 if(driver ==null  )
+    	 {
+    		 throw new IllegalArgumentException("driver is null");
+    		 
+    	 }
+    	 else if(js ==null)
+    	 {
+    	 	 throw new IllegalArgumentException("js is null");
+    	 }
+    	 else {
+    		 Thread.sleep(8000);
+            js.executeScript("window.scrollBy(0, document.body.scrollHeight)");
+    	 }
+     }
+
+
+ //======================================================================================================//			
 	
-	
+ 	public static String GetNumber(String xpath) throws Exception
+ 	{
+ 		
+ 		
+ 		 if (xpath == null || xpath.isEmpty()) {
+ 		        throw new IllegalArgumentException("XPath is null or empty");
+ 		    }
+ 		 
+ 		
+ 		        WebElement el=Wait_Element(xpath,10);
+ 				el.isDisplayed();
+ 				String Text =el.getAttribute("value");
+ 	
+ 		
+		return Text;
+		
+ 	
+ 	}
+     
+     
+     
 
 }

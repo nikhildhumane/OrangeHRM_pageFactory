@@ -46,7 +46,7 @@ public class SuperAdmin_LoginPage extends BaseClass {
 	
 	public void Enter_SuperAdminUsername(String xpath, String Sendvalue) throws Exception {
 	try {
-	        WebElement element = Config.Op.Wait_Element(xpath, 10);
+	        WebElement element = Config.Op.Wait_Element(xpath, 20);
 	        
 	             Thread.sleep(5000);
 	             if (element == null ) {
@@ -83,7 +83,7 @@ public class SuperAdmin_LoginPage extends BaseClass {
 	public void Enter_SuperAdminPassword(String xpath,String Sendvalue) throws Exception
 	{
 		try {
-			WebElement element=Config.Op.Wait_Element(xpath, 10);
+			WebElement element=Config.Op.Wait_Element(xpath, 20);
 			  Thread.sleep(5000);
 			  if (element == null ) {
 	            	 log.error("Enter_SuperAdminPassword :- Element not found ===Exception===: ");

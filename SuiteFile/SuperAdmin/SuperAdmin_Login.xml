@@ -9,8 +9,8 @@
 	</listeners>
   <test thread-count="5" name="SuperAdminLogin">
     <classes>
-      <class name="OrangeHRM_pratice.TestCases.SuperAdmin.Tc_001_SuperAdmin_Login"/>
-      <class name="OrangeHRM_pratice.TestCases.SuperAdmin.Tc_002_SuperAdmin_LoginPage2"/>
+ <!--     <class name="OrangeHRM_pratice.TestCases.SuperAdmin.Tc_001_SuperAdmin_Login"/>  -->
+      <class name="OrangeHRM_pratice.TestCases.SuperAdmin.Tc_002_Add_New_Employee"/>
     </classes>
   </test> <!-- SuperAdminLogin -->
 </suite> <!-- superAdmin_Login -->

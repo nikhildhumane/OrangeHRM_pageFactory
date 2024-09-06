@@ -22,22 +22,33 @@ public class Tc_002_Add_New_Employee extends BaseClass {
 	{
 		
 		
-		LoginPageUI.OpenURL(prop.getProperty("url"));
-		LoginPageUI.Enter_SuperAdminUsername(UILocators.or_LoginUserName,prop.getProperty("SuperAdmin_Username"));
-		LoginPageUI.Enter_SuperAdminPassword(UILocators.or_LoginPassword,prop.getProperty("SuperAdmin_Password"));
+		LoginPageUI.OpenURL(ProFile.ReadData("url"));
+		LoginPageUI.Enter_SuperAdminUsername(UILocators.or_LoginUserName,ProFile.ReadData("SuperAdmin_Username"));
+		LoginPageUI.Enter_SuperAdminPassword(UILocators.or_LoginPassword,ProFile.ReadData("SuperAdmin_Password"));
 		LoginPageUI.Click_Login(UILocators.or_LoginButton);
 		
 		
-		DashBoardPageUI.NavigateTo_DashBoardPage(UILocators.or_DashBoardHeaderName, prop.getProperty("DashBoardText"));
+		DashBoardPageUI.NavigateTo_DashBoardPage(UILocators.or_DashBoardHeaderName, ProFile.ReadData("DashBoardText"));
 		
 		
 		MainPageUI.Click_On_PIM_Menu(UILocators.or_PIM);
 		
 		
-		PIMPageUI.NavigateTo_(UILocators.or_EmployeeList, prop.getProperty("EmployeeList"));
+		PIMPageUI.NavigateTo_(UILocators.or_EmployeeList, ProFile.ReadData("EmployeeList"));
 		PIMPageUI.Click_AddEmployee(UILocators.Or_AddEmployee);
 		
-				
+		AddEmp_Page.Enter_EmployeeFirstName(UILocators.or_FirstName,"EmployeeFirst_Name" );
+		AddEmp_Page.Enter_EmployeeMiddleName(UILocators.or_MiddleName, "EmployeeMiddle_Name");		
+		AddEmp_Page.Enter_EmployeeLastName(UILocators.or_LastName, "EmployeeLast_Name");
+		AddEmp_Page.GetEmployeeID(UILocators.or_EmployeeID, "Employee_ID");
+		AddEmp_Page.click_CreateLoginDetails(UILocators.or_CreateLoginDetails);
+		
+		AddEmp_Page.Enter_EmployeeUserName(UILocators.or_Emp_UserName, "Employee_UserName");
+		//AddEmp_Page.Select_Emp_Status(UILocators.or_Emp_EnabledStatus);
+		AddEmp_Page.Enter_EmployeePassword(UILocators.Or_Emp_Password, "Employee_Password");
+		AddEmp_Page.Enter_EmployeeConfirmPassword(UILocators.Or_Emp_ConfirmPassword,ProFile.ReadData("Employee_Password"));
+		AddEmp_Page.click_saveButton(UILocators.or_Emp_SaveButton);
+		
 		
 		
 		

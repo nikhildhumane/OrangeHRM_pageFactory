@@ -9,7 +9,7 @@ import junit.framework.Assert;
 
 public class PIMPage extends BaseClass {
 	
-	
+//================================================================================================================================//	
 	
 	public void NavigateTo_(String xpath,String exptitle) throws Exception
 	{ 
@@ -60,6 +60,9 @@ public class PIMPage extends BaseClass {
 	    }
 	}
 
+	
+	
+	
 	
 	
 	

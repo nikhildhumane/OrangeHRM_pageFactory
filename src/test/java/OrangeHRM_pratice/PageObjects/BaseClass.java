@@ -20,8 +20,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
 
+import OrangeHRM_pratice.BusinesLogic.PropertiesFileReader;
 import OrangeHRM_pratice.Listener.SuiteListener;
 import OrangeHRM_pratice.Listener.TestListener;
+import OrangeHRM_pratice.PageObjects.SuperAdmin.PIM_AddEmployeePage;
 import OrangeHRM_pratice.PageObjects.SuperAdmin.DashBoardPage;
 import OrangeHRM_pratice.PageObjects.SuperAdmin.MainPage;
 
@@ -36,34 +38,29 @@ public class BaseClass {
     public static WebDriverWait wait;
     
   //  public String methodName = this.getClass().getEnclosingMethod().getName();
-    public static Properties prop;
+    
+    public static PropertiesFileReader ProFile;
+    
+   
     public static Logger log = LogManager.getLogger(BaseClass.class);
     
     public static SuperAdmin_LoginPage LoginPageUI;
     public static DashBoardPage DashBoardPageUI;
     public static MainPage MainPageUI;
     public static PIMPage PIMPageUI;
+    public static PIM_AddEmployeePage AddEmp_Page;
+    
+    
     @BeforeSuite
     public void loadConfig()
     {
-    	try {
-			prop = new Properties();
-			FileInputStream ip = new FileInputStream(
-					System.getProperty("user.dir") + "\\Properties_File\\config.properties");
-			prop.load(ip);
-			
-			
-			LoginPageUI=new SuperAdmin_LoginPage();
-			DashBoardPageUI=new DashBoardPage();
-			MainPageUI=new MainPage();
-			PIMPageUI=new PIMPage();
-			
-
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+    	ProFile=new PropertiesFileReader();
+		
+		LoginPageUI=new SuperAdmin_LoginPage();
+		DashBoardPageUI=new DashBoardPage();
+		MainPageUI=new MainPage();
+		PIMPageUI=new PIMPage();
+		AddEmp_Page=new PIM_AddEmployeePage();
     }
     
     

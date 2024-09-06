@@ -7,14 +7,14 @@
   </listeners>
   <test thread-count="5" name="SuperAdminLogin(failed)">
     <classes>
-      <class name="OrangeHRM_pratice.TestCases.SuperAdmin.Tc_002_SuperAdmin_LoginPage2">
+      <class name="OrangeHRM_pratice.TestCases.SuperAdmin.Tc_002_Add_New_Employee">
         <methods>
           <include name="loadConfig"/>
           <include name="tearDown"/>
-          <include name="SuperAdminLogin"/>
           <include name="SetUp"/>
+          <include name="create_New_Acc_by_clicking_on_Add_Employee_button"/>
         </methods>
-      </class> <!-- OrangeHRM_pratice.TestCases.SuperAdmin.Tc_002_SuperAdmin_LoginPage2 -->
+      </class> <!-- OrangeHRM_pratice.TestCases.SuperAdmin.Tc_002_Add_New_Employee -->
     </classes>
   </test> <!-- SuperAdminLogin(failed) -->
 </suite> <!-- Failed suite [superAdmin_Login] -->

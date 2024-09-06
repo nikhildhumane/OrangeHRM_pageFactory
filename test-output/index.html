@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-superAdmin_Login" class="navigator-link">
-              <span class="suite-name border-failed">superAdmin_Login</span>
+              <span class="suite-name border-passed">superAdmin_Login</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-superAdmin_Login" class="hide-methods failed suite-superAdmin_Login"> (hide)</a> <!-- hide-methods failed suite-superAdmin_Login -->
-                      <a href="#" panel-name="suite-superAdmin_Login" class="show-methods failed suite-superAdmin_Login"> (show)</a> <!-- show-methods failed suite-superAdmin_Login -->
-                    </span>
-                    <div class="method-list-content failed suite-superAdmin_Login">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-superAdmin_Login" title="OrangeHRM_pratice.TestCases.SuperAdmin.Tc_002_SuperAdmin_LoginPage2" class="method navigator-link" hash-for-method="SuperAdminLogin">SuperAdminLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-superAdmin_Login -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,7 +103,7 @@
                     <div class="method-list-content passed suite-superAdmin_Login">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-superAdmin_Login" title="OrangeHRM_pratice.TestCases.SuperAdmin.Tc_001_SuperAdmin_Login" class="method navigator-link" hash-for-method="SuperAdminLogin">SuperAdminLogin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-superAdmin_Login" title="OrangeHRM_pratice.TestCases.SuperAdmin.Tc_002_Add_New_Employee" class="method navigator-link" hash-for-method="create_New_Acc_by_clicking_on_Add_Employee_button">create_New_Acc_by_clicking_on_Add_Employee_button</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-superAdmin_Login -->
@@ -132,41 +118,17 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-superAdmin_Login" class="panel superAdmin_Login">
-          <div class="suite-superAdmin_Login-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">OrangeHRM_pratice.TestCases.SuperAdmin.Tc_002_SuperAdmin_LoginPage2</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="SuperAdminLogin">
-                  </a> <!-- SuperAdminLogin -->
-                  <span class="method-name">SuperAdminLogin</span>
-                  <div class="stack-trace">junit.framework.AssertionFailedError
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at junit.framework.Assert.assertTrue(Assert.java:27)
-	at OrangeHRM_pratice.PageObjects.SuperAdmin.SuperAdmin_LoginPage.OpenURL(SuperAdmin_LoginPage.java:33)
-	at OrangeHRM_pratice.TestCases.SuperAdmin.Tc_002_SuperAdmin_LoginPage2.SuperAdminLogin(Tc_002_SuperAdmin_LoginPage2.java:22)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-superAdmin_Login-class-failed -->
           <div class="suite-superAdmin_Login-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">OrangeHRM_pratice.TestCases.SuperAdmin.Tc_001_SuperAdmin_Login</span>
+              <span class="class-name">OrangeHRM_pratice.TestCases.SuperAdmin.Tc_002_Add_New_Employee</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="SuperAdminLogin">
-                  </a> <!-- SuperAdminLogin -->
-                  <span class="method-name">SuperAdminLogin</span>
+                  <a name="create_New_Acc_by_clicking_on_Add_Employee_button">
+                  </a> <!-- create_New_Acc_by_clicking_on_Add_Employee_button -->
+                  <span class="method-name">create_New_Acc_by_clicking_on_Add_Employee_button</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -187,8 +149,7 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;SuperAdminLogin&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;OrangeHRM_pratice.TestCases.SuperAdmin.Tc_001_SuperAdmin_Login&quot;/&gt;
-      &lt;class name=&quot;OrangeHRM_pratice.TestCases.SuperAdmin.Tc_002_SuperAdmin_LoginPage2&quot;/&gt;
+      &lt;class name=&quot;OrangeHRM_pratice.TestCases.SuperAdmin.Tc_002_Add_New_Employee&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- SuperAdminLogin --&gt;
 &lt;/suite&gt; &lt;!-- superAdmin_Login --&gt;
@@ -202,7 +163,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">SuperAdminLogin (2 classes)</span>
+                <span class="test-name">SuperAdminLogin (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -228,20 +189,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'SuperAdminLogin')
-data.setCell(0, 2, 'OrangeHRM_pratice.TestCases.SuperAdmin.Tc_001_SuperAdmin_Login')
-data.setCell(0, 3, 44169);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'SuperAdminLogin')
-data.setCell(1, 2, 'OrangeHRM_pratice.TestCases.SuperAdmin.Tc_002_SuperAdmin_LoginPage2')
-data.setCell(1, 3, 5081);
+data.setCell(0, 1, 'create_New_Acc_by_clicking_on_Add_Employee_button')
+data.setCell(0, 2, 'OrangeHRM_pratice.TestCases.SuperAdmin.Tc_002_Add_New_Employee')
+data.setCell(0, 3, 119364);
 window.suiteTableData['superAdmin_Login']= { tableData: data, tableDiv: 'times-div-superAdmin_Login'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 49 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-superAdmin_Login">
               </div> <!-- times-div-superAdmin_Login -->
             </div> <!-- times-div -->
@@ -256,16 +213,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-superAdmin_Login" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">OrangeHRM_pratice.TestCases.SuperAdmin.Tc_002_SuperAdmin_LoginPage2</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">loadConfig</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-superAdmin_Login" class="panel">
@@ -274,39 +224,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">OrangeHRM_pratice.TestCases.SuperAdmin.Tc_001_SuperAdmin_Login</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">OrangeHRM_pratice.TestCases.SuperAdmin.Tc_002_Add_New_Employee</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">loadConfig</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">SetUp</span>
-                <span class="method-start">168 ms</span>
+                <span class="method-start">138 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">SuperAdminLogin</span>
-                <span class="method-start">20810 ms</span>
+                <span class="method-name">create_New_Acc_by_clicking_on_Add_Employee_button</span>
+                <span class="method-start">4092 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">65009 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">OrangeHRM_pratice.TestCases.SuperAdmin.Tc_002_SuperAdmin_LoginPage2</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">SetUp</span>
-                <span class="method-start">65659 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">SuperAdminLogin</span>
-                <span class="method-start">68153 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">73292 ms</span>
+                <span class="method-start">123471 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
